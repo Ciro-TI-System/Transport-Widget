@@ -13,7 +13,7 @@ Desenvolvimento de um widget de transporte.<br/>
 <br>
 
 <p align="center">
-  <img src=".github/Transport Widget.jpg" width="100%">
+  <img src=".github/Transport Widget.jpg" width="50%">
 </p>
 
 <br>
