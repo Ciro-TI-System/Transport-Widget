@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* [Font] Inter (500-600-700) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  color: #372d3b;
+  background-color: #f5f5f5;
+  font-size: 1.6rem;
+  font-family: "Inter", sans-serif;
+}
+
+.pop-up {
+  display: none;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 1rem);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: #2ecc71;
+  box-shadow: 0 0.8rem 3.2rem rgba(0, 0, 0, 16%);
+}
+
+div.pop-up.animated {
+  transform: translateY(4rem);
+  transition: transform 0.4s;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 79.5rem;
+  height: 68.9rem;
+  margin: auto;
+  padding: 2.4rem 5.6rem;
+  border-radius: 4rem;
+  background-color: #fff;
+  box-shadow: 0 0.8rem 3.2rem rgba(0, 0, 0, 16%);
+}
+
+.widget header,
+.widget main,
+.widget footer {
+  width: 100%;
+}
+
+.handle {
+  width: 16.8rem;
+  height: 1.7rem;
+  border-radius: 999px;
+  background-color: #e5d8ea;
+}
+
+.handle:hover {
+  cursor: grab;
+}
+
+.handle:active {
+  cursor: grabbing;
+  background-color: #864293;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+header h1 {
+  font-size: 4rem;
+  line-height: 4.841rem;
+  font-weight: 700;
+}
+
+header h2 {
+  font-size: 2.5rem;
+  line-height: 3.026rem;
+  font-weight: 500;
+}
+
+header strong {
+  color: #864293;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .container {
+  display: flex;
+  position: relative;
+}
+
+main figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+main .rating {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  position: absolute;
+  top: 11rem;
+  padding: 0.8rem 2.2rem;
+  border-radius: 999px;
+  color: #fbf8fc;
+  background-color: #372d3b;
+}
+
+main .rating p {
+  font-size: 1.961rem;
+  font-weight: 600;
+  line-height: 0;
+}
+
+main figcaption {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.178rem;
+  margin-top: 1.129rem;
+}
+
+main img.car {
+  position: absolute;
+  z-index: 0;
+  left: 9.2rem;
+  top: 3rem;
+}
+
+main .car-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.233rem;
+}
+
+main .placa {
+  font-size: 4.11rem;
+  font-weight: 700;
+  line-height: 4.973rem;
+}
+
+main .modelo {
+  font-size: 2.466rem;
+  font-weight: 500;
+  line-height: 2.984rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+footer .message-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+footer .message-box,
+footer .message-box input {
+  width: 100%;
+}
+
+footer .message-box input {
+  height: 6.4rem;
+  padding: 1.7rem 2.9rem 1.8rem 2.9rem;
+  border-radius: 2.4rem;
+  color: #372d3b;
+  background-color: #f5edf7;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 2.905rem;
+}
+
+footer .message-box input::placeholder {
+  color: #372d3b;
+  font-size: 2.4rem;
+}
+
+footer .message-box input:focus,
+footer .message-box input:hover {
+  outline: 1px solid #864293;
+}
+
+footer .send {
+  display: none;
+  position: absolute;
+  right: 1.5rem;
+}
+
+footer .send svg {
+  fill: transparent;
+}
+
+footer .send svg:hover {
+  fill: #864293;
+  cursor: pointer;
+  transition: fill 0.1s;
+}
+
+footer .action-buttons {
+  display: flex;
+  gap: 4rem;
+}
+
+footer .action-buttons > div {
+  display: flex;
+}
+
+footer .action-buttons > div:hover {
+  scale: 1.2;
+  transition: scale 0.1s;
+  cursor: pointer;
+}
